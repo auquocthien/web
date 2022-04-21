@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./trangchu.css">
+    <script src="./trangchu.js"></script>
+</head>
+<body>
+    <header>
+        <a href="./trangchu.html">
+            <img src="./img/noodle-3675045-3055204-removebg-preview.png" class="logo-img" alt="logo">
+        </a>
+        <nav class="nav">
+            <a class="nav-link" href="./trangchu.html">Home</a>
+            <a class="nav-link" href="./product.html">Product</a>
+            <a class="nav-link" href="./contact">Contact</a>
+            <a class="nav-link" href="./about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section-1">
+            
+            <!-- <img id="img-trans" src="./img/slide_show_1.jpg" alt="banh canh quy nhon"> -->
+            <div class="slide-container">
+                <div class="slide fade">
+                    <div class="numbertext">1 / 3</div>
+                        <img src="./img/slide_show_1.jpg">
+                    <div class="text">bánh canh</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">2 / 3</div>
+                        <img src="./img/slide_show_1.jpg">
+                    <div class="text">bánh canh</div>
+                </div>
+                <div class="slide fade">
+                    <div class="numbertext">3 / 3</div>
+                        <img src="./img/slide_show_1.jpg">
+                    <div class="text">bánh canh</div>
+                </div>
+                <a class="prev" onclick="plushSlide(-1)"><</a>
+                <a class="next" onclick="plushSlide(1)">></a>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-2">
+            <h1>Wellcome</h1>
+            <ul class="section-2__img">
+                <li class="section-2__img-items">
+                    <img src="./img/section_2__img1.jpg" alt="" title="hủ tiếu">
+                    <p class="section-2__text">Hủ tiếu Mỹ Tho là loại hủ tiếu do người Mỹ Tho chế biến, nguyên liệu chính là hủ tiếu khô, nước dùng chính là thịt bằm nhỏ, lòng heo nấu cùng xương tủy heo <a class="xemthem" href="./product.html">Xem thêm</a></p>
+                </li>
+                <li class="section-2__img-items">
+                    <img src="./img/section_2__img2.jpg" alt="" title="bánh canh">
+                    <p class="section-2__text">Món bánh canh là món ăn quen thuộc ở nhiều địa phương trong cả nước nhưng mỗi nơi lại mang một mùi vị đặc trưng riêng <a class="xemthem" href="./product.html">Xem thêm</a></p>
+                </li>
+                <li class="section-2__img-items">
+                    <img src="./img/section_2__img3.jpg" alt="" title="phở">
+                    <p class="section-2__text">Phở là một món ăn truyền thống của Việt Nam, có nguồn gốc từ Hà Nội và Nam Định, và được xem là một trong những món ăn tiêu biểu cho nền ẩm thực Việt Nam <a class="xemthem" href="./product.html">Xem thêm</a></p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">thông tin liên hệ: </p>
+        <a class="footer-link" href=""><i class="fa fa-facebook"></i> facebook</a>
+        <a class="footer-link" href=""><i class="fa fa-phone"></i> number phone</a>
+        <a class="footer-link" href=""><i class="fa fa-twitter"></i> twitter</a>
+    </footer>
+</body>
+</html>
