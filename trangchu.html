@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./trangchu.css">
-    <script src="./trangchu.js"></script>
 </head>
 <body>
     <header>
@@ -29,17 +28,17 @@
             <div class="slide-container">
                 <div class="slide fade">
                     <div class="numbertext">1 / 3</div>
-                        <img src="./img/slide_show_1.jpg">
+                        <img src="./img/slide_show_1.jpg" class="slide-img">
                     <div class="text">bánh canh</div>
                 </div>
                 <div class="slide fade">
                     <div class="numbertext">2 / 3</div>
-                        <img src="./img/slide_show_1.jpg">
+                        <img src="./img/slide_show_1.jpg" class="slide-img">
                     <div class="text">bánh canh</div>
                 </div>
                 <div class="slide fade">
                     <div class="numbertext">3 / 3</div>
-                        <img src="./img/slide_show_1.jpg">
+                        <img src="./img/slide_show_1.jpg" class="slide-img">
                     <div class="text">bánh canh</div>
                 </div>
                 <a class="prev" onclick="plushSlide(-1)"><</a>
@@ -67,14 +66,43 @@
                     <img src="./img/section_2__img3.jpg" alt="" title="phở">
                     <p class="section-2__text">Phở là một món ăn truyền thống của Việt Nam, có nguồn gốc từ Hà Nội và Nam Định, và được xem là một trong những món ăn tiêu biểu cho nền ẩm thực Việt Nam <a class="xemthem" href="./product.html">Xem thêm</a></p>
                 </li>
+                <li class="section-2__img-items">
+                    <img src="./img/section_2__img3.jpg" alt="" title="phở">
+                    <p class="section-2__text">Phở là một món ăn truyền thống của Việt Nam, có nguồn gốc từ Hà Nội và Nam Định, và được xem là một trong những món ăn tiêu biểu cho nền ẩm thực Việt Nam <a class="xemthem" href="./product.html">Xem thêm</a></p>
+                </li>
             </ul>
         </section>
     </main>
     <footer class="footer">
-        <p class="footer-text">thông tin liên hệ: </p>
-        <a class="footer-link" href=""><i class="fa fa-facebook"></i> facebook</a>
-        <a class="footer-link" href=""><i class="fa fa-phone"></i> number phone</a>
-        <a class="footer-link" href=""><i class="fa fa-twitter"></i> twitter</a>
+        <img src="./img/noodle-3675045-3055204-removebg-preview.png" alt="" class="footer_logo">
+        <div class="footer_text">
+            <address>
+                tên công ty:<br>
+                địa chỉ tòa nhà:<br>
+                số điện thoai:<br>
+                email:<br>
+            </address>
+            <div class="footer_link">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+            </div>
+        </div>
+        <div class="footer_map">
+            <img src="./img/footer_map.jpg" alt="">
+        </div>
+        <div class="footer_form">
+            <p class="form_text">đăng kí nhận thông tin sản phẩm</p>
+            <p class="form_text">...............................</p>
+            <input type="text" class="input_form" placeholder="Họ và tên">
+            <input type="text" class="input_form" placeholder="Email">
+            <a href="#" class="btn_form">Đăng kí</a>
+
+        </div>
+        <div class="footer_info_web_dev">
+            <pre>bản quyền thuộc về:         số điện thoại:         email:          </pre>
+        </div>
     </footer>
+    <script src="./trangchu.js"></script>
 </body>
 </html>
