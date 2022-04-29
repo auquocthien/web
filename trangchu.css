@@ -146,9 +146,9 @@ header a{
     to {opacity: 1;}
 }
 .section-2{
-    margin: 0;
-    padding: 0;
+    margin-left: 20px;
     height: auto;
+    position: relative;
 }
 .section-2_text{
     text-align: center;
@@ -159,11 +159,48 @@ header a{
 }
 .hu_tieu, .banh_canh, .pho, .bun_rieu{
     margin-bottom: 40px;
-}
-.section-2__hu_tieu, .section-2__banh_canh, .section-2__pho, .section-2__bun_rieu{
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    /* justify-content: space-between; */
+    flex-direction: row;
+}
+.container_img{
+    margin-right: 50px;
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(121, 121, 121);
+}
+
+.image{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.overlay{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.container_img:hover .image{
+    opacity: 0.3;
+}
+.container_img:hover .overlay{
+    opacity: 1;
+}
+.price{
+    background-color: #ffec83;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    padding: 20px 35px;
+    /* border: solid #000 3px; */
+    border-radius: 10px 100px / 120px;
 }
 .add_items{
     display: block;
@@ -176,59 +213,23 @@ header a{
     background-color: #ffeb7c;
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgb(121, 121, 121);
+    grid-area: add_item;
 
 }
-.section-2__hu_tieu img, .section-2__banh_canh img, .section-2__pho img, .section-2__bun_rieu img{
-    padding: 10px;
-    background-color: white;
-    box-shadow: 2px 2px 5px rgb(121, 121, 121);
-}
-.section-2__hu_tieu img:hover, .section-2__banh_canh img:hover, .section-2__pho img:hover, .section-2__bun_rieu img:hover{
-   
-}
+
 .info_items{
     position: absolute;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 'add_item cart';
 }
 .gio_hang{
-    position: relative;
+    position: absolute;
 }
 .gio_hang i{
     font-size: 45px;
     position: absolute;
     right: 3px;
 }
-.cart{
-    position: relative;
-    padding: 0 32px 0 32px;
-    clip-path: circle(5% at 95% 11%);
-    transition: all ease-in-out .3s;
-    background-color: white;
-}
-.cart_icon{
-    position: absolute;
-    font-size: 1.4em;
-    color: #000000;
-    transition: ease-out .3s;
-}
-.cart_text{
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.8;
-}
-.cart_description{
-    margin: 0;
-    font-size: 10px;
-    line-height: 1.6;
-}
-.cart:hover, .cart:focus{
-    clip-path: circle(75%);
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(90, 90, 90);
-    outline: none;
-}
-
 .footer{
     margin-top: 15px;
     font-size: 20px;
