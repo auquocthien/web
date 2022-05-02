@@ -55,7 +55,7 @@ header a{
 .btn-search:hover{
     cursor: pointer;
 }
-.nav-link:hover, .cart_btn:hover{
+.nav-link:hover, #cart_btn:hover{
     /* color: rgb(171, 185, 39); */
     background-color: #ffffff;
 }
@@ -150,7 +150,7 @@ header a{
     height: auto;
     /* position: relativ; */
 }
-.section-2_text{
+.section-2_text, .tt_text, #sc_text{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -184,23 +184,29 @@ header a{
     font-size: 25px;
     border-bottom: 2px dotted black;
 }
-.sup_cart_items{
+#sup_cart_items{
     grid-area: item;
     margin-bottom: 5px;
     margin-top: 5px;
-
-    
 }
+
 .select_items{
-    margin-left: 2px;
+    margin-top: 2px;
+    height: 14px;
+    grid-area: selected;
 }
 .name_item{
-
+    margin-left: 10px;
+    height: 20px;
+    grid-area: name;
 }
 .quantity{
     margin-right: 2px;
+    height: 20px;
+    float: right;
+    grid-area: sl;
 }
-.cart_btn{
+#cart_btn{
     border: 1px solid #fff;
     padding: 2px 4px;
     height: 20px;
@@ -364,4 +370,27 @@ header a{
 .footer_info_web_dev pre{
     margin-left: 10px;
 }
-/* slide show */
+
+
+/* thanh toan */
+.tt_table{
+    width: 940px;
+    margin: 0 auto;
+    height: auto;
+    border: 1px solid blue;
+    border-collapse: collapse;
+    
+}
+.tt_row, .tt_data, .tt_header{
+    border: 1px solid blue;
+}
+.tt_header{
+    padding: 10px;
+    margin: 20px;
+}
+.tt_text{
+    
+}
+
+
+
