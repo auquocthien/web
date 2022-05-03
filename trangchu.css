@@ -168,13 +168,33 @@ header a{
     top: 271px;
     left: 1130px;
     width: 200px;
-    height: 271px;
+    height: auto;
     border: 2px solid black;
     border-radius: 5px;
     background-color: rgb(240, 240, 240);
     display: grid;
     grid-template-areas: "text" "item" "btn";
     grid-template-rows: 30px auto 26px;
+}
+.cart_items-table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.th_name{
+    width: 70%;
+    
+}
+.th_quantity{
+    width: 30%;
+}
+.th_name, .th_quantity{
+    font-size: 20px;
+    border: 2px solid black;
+}
+td{
+    text-align: center;
+    border: 2px solid black;
+
 }
 .cart_text{
     text-align: center;
